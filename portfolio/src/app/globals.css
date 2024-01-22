@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-color: gray;
+  background-size: cover;
+}
+
+.navbarr {
+  position: absolute;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+}
+.navbarr a {
+  color: white;
+}
+
+.navbarr .logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.navbarr .navLink ul {
+  display: flex;
+}
+
+.navbarr .navLink ul li {
+  margin: 0 25px;
+}
+
+.navbarr .navLink ul li.active a {
+  color: blueviolet;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+  .navLink {
+    display: none;
+  }
+}
